@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #00d19b;
+    --dark: #1e1e1e;
+    --light-grey: #f0f0f0;
+    --light: #fefcfc;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: #1e1e1e;
+    background-color: var(--light);
+
+    position: relative;
+
+    padding: 20px 0 100px 0;
+}
+
+.container {
+    width: clamp(500px, 70%, 1200px);
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1120px) {
+    .container {
+        width: 90%;
+    }
+}

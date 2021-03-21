@@ -1,0 +1,46 @@
+.buy-features {
+    background-color: var(--white);
+
+    width: 100%;
+    padding: 40px 0;
+}
+
+.buy-features .container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.buy-features .feature {
+    display: flex;
+    flex-flow: row nowrap;
+    width: clamp(300px, 30%, 400px);
+    padding-right: 40px;
+}
+
+.feature-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.feature-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.buy-features .feature-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+}
+
+@media only screen and (max-width: 780px) {
+    .buy-features .feature {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+    }
+    .buy-features .container {
+        flex-flow: column nowrap;
+    }
+}
